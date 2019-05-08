@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.romario.login_registro.LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Login"
+        android:layout_marginBottom="29dp"
+        android:layout_above="@+id/etUsu"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etUsu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/etClave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/etClave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Clave"
+        android:inputType="textPassword"
+        android:layout_above="@+id/btnIngresar"
+        android:layout_alignLeft="@+id/etUsu"
+        android:layout_alignStart="@+id/etUsu"
+        android:layout_marginBottom="39dp" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:layout_marginBottom="128dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/etClave"
+        android:layout_alignStart="@+id/etClave" />
+
+    <Button
+        android:id="@+id/btnCerrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etClave"
+        android:layout_alignRight="@+id/etClave"
+        android:layout_below="@+id/etClave"
+        android:text="Cerrar" />
+</RelativeLayout>
