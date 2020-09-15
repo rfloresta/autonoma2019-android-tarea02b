@@ -1,2 +1,2 @@
 # login-android
-Un simple login realizado en Android Studio
+Login básico realizado en Android Studio
